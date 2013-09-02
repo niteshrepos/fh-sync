@@ -1,7 +1,5 @@
 var collisions = {};
 
-console.log("")
-
 exports.doList = function(dataset_id, params, cb) {
   console.log("doList : ", dataset_id, " :: ", params);
 
@@ -20,10 +18,12 @@ exports.doList = function(dataset_id, params, cb) {
     if( params && params.syncDelay && !isNaN(params.syncDelay) ) {
       // Simulate a delay with list operation
       setTimeout(function() {
+        console.log("if", resJson)
         return cb(null, resJson);
       }, (params.syncDelay * 1000))
     }
     else {
+      console.log("if", resJson)
       return cb(null, resJson);
     }
   });
