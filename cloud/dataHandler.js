@@ -1,5 +1,7 @@
 var collisions = {};
 
+console.log("")
+
 exports.doList = function(dataset_id, params, cb) {
   console.log("doList : ", dataset_id, " :: ", params);
 
