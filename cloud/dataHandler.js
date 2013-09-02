@@ -25,7 +25,7 @@ exports.doList = function(dataset_id, params, cb) {
       }, (params.syncDelay * 1000))
     }
     else {
-      console.log("if", resJson)
+      console.log("else", resJson)
       return cb(null, resJson);
     }
   });
