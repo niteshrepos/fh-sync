@@ -7,6 +7,7 @@ exports.doList = function(dataset_id, params, cb) {
     "act": "list",
     "type": dataset_id
   }, function(err, res) {
+    console.log( "res", res)
     if (err) return cb(err);
 
     var resJson = {};
